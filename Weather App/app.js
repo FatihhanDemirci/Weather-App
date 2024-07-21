@@ -7,6 +7,8 @@ btn.addEventListener("click", () => {
   getApi(inputText);
 });
 
+//APİ Description//
+// "These data were obtained from the 'openweathermap' address; you can run it by entering your own API_KEY."//
 const getApi = async (value) => {
   const key = "APİ_KEY";
   let url = ` https://api.openweathermap.org/data/2.5/weather?q=${value}&${key}&units=metric`;
