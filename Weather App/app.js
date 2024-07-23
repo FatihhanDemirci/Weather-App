@@ -22,6 +22,8 @@ const printValue = (data) => {
   let country = data.sys.country;
   let temp = data.main.temp;
   let feels = data.main.feels_like;
+  let sunrise = data.sys.sunrise;
+  let sunset = data.sys.sunset;
   let description = data.weather[0].description;
   let wind = data.wind.speed;
 
@@ -41,6 +43,10 @@ const printValue = (data) => {
         <br />
         <div class="feels-like">
           <h3>${feels}°C</h3>
+        </div>
+         <div class="sun">
+          <h3>${sunrise}°C</h3>
+          <h3>${sunset}°C</h3>
         </div>
   `;
 };
